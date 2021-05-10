@@ -14,4 +14,22 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Salary Program, with a JS file</title>
   </head>
+  <body>
+    <script src="./js/script.js"></script>
+    <h1>Salary Program, with a JS</h1>
+    <p>
+      Please enter your employment information:
+      <form action="javascript:enterClicked()">
+        <label for="hoursWorked">Number of hours worked:</label>
+        <input type="number" id="hours-worked" placeholder="e.g 7 hours">&nbsphours<br><br>
+        <label for="hourlyRate">Hourly Rate:</label>
+        $&nbsp<input type="number" id="hourly-rate" placeholder="e.g $15"><br><br>
+        <input type="submit" value="Calculate">
+      </form>
+    </p>
+    <div id="answers">
+      <div id="pay"></div>
+      <div id="government"></div>
+    </div>
+  </body>
 </html>
