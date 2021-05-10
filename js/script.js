@@ -14,10 +14,10 @@ function enterClicked () {
   const rate = parseInt(document.getElementById("hourly-rate").value)
 
   // process
-  const pay = (hours x rate) * (1.00 - 0.18)
-  const government = (hours x rate) * (1.00 - 0.82)
+  const pay = (hours * rate) * (1.00 - 0.18)
+  const government = (hours * rate) * (1.00 - 0.82)
 
   //output
-  document.getElementById('pay').innerHTML = 'Your pay will be: $' + pay
-  document.getElementById('government').innerHTML = 'The government will take: $' + government
+  document.getElementById('pay').innerHTML = 'Your pay will be: $' + pay.toFixed(2)
+  document.getElementById('government').innerHTML = 'The government will take: $' + government.toFixed(2)
 }
