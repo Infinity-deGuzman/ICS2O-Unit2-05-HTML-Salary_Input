@@ -15,7 +15,7 @@ function enterClicked () {
 
   // process
   const pay = (hours x rate) * (1.00 - 0.18)
-  const government = (hours x rate) * (0.82)
+  const government = (hours x rate) * (1.00 - 0.82)
 
   //output
   document.getElementById('pay').innerHTML = 'Your pay will be: $' + pay
